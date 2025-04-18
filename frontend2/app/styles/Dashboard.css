@@ -1,0 +1,31 @@
+.Dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.Section {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-evenly;
+}
+
+.VerticalSection {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.Card {
+  background-color: rgb(134, 205, 195);
+  border-radius: 5px;
+  border: 2px solid grey;
+  margin: 10px;
+}
+
+/* Login */
+
+h3 {
+  margin-left: 10px;
+}

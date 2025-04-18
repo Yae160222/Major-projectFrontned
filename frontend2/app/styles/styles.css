@@ -1,0 +1,73 @@
+@keyframes pulseTransition {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.97);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+a.active {
+  color: red;
+  font-size: larger;
+}
+
+a.pending {
+  animation: pulse 1s infinite;
+}
+
+a.transitioning {
+  opacity: 0.6;
+  animation: pulseTransition 0.8s infinite;
+}
+
+.AI-bot-btn {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  z-index: 11;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  background-color: blue;
+  transform: "translateX(-50%)";
+}
+
+.AddPostButton {
+  position: absolute;
+  left: 5%;
+  bottom: 0%;
+  z-index: 11;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  background-color: rgb(139, 54, 196);
+  transform: "translateX(-50%)";
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

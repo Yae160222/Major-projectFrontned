@@ -1,0 +1,98 @@
+.ChatPage {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, rgb(48, 24, 68), rgb(31, 31, 64));
+  color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 20%;
+}
+
+/* Chat Window */
+.ChatWindow {
+  flex: 1;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+/* Chat Bubbles */
+.BotMessage,
+.UserMessage {
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 18px;
+  margin: 8px 0;
+  font-size: 16px;
+  word-wrap: break-word;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bot Message */
+.BotMessage {
+  background: rgb(64, 64, 161);
+  align-self: flex-start;
+  border-bottom-left-radius: 5px;
+}
+
+/* User Message */
+.UserMessage {
+  background: rgb(106, 90, 205);
+  align-self: flex-end;
+  border-bottom-right-radius: 5px;
+}
+
+/* Input Area */
+.TextArea {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+}
+
+/* Input Box */
+.input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Send Button */
+.sendButton {
+  padding: 12px 18px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  background: rgb(90, 190, 255);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.sendButton:hover {
+  background: rgb(60, 160, 240);
+}
+
+.sendButton:active {
+  transform: scale(0.95);
+}

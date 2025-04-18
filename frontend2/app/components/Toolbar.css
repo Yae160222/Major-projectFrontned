@@ -1,0 +1,29 @@
+.TopBar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between; /* ✅ Moves left and right elements to ends */
+  align-items: center;
+  background-color: aqua;
+  padding: 0 20px; /* ✅ Adds padding on both sides */
+  margin-bottom: 40px;
+}
+
+.left-elements {
+  display: flex;
+  gap: 10px;
+}
+
+.right-elements {
+  display: flex;
+  gap: 10px;
+}
+
+.TopBarElement {
+  border: 5px transparent;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: bisque;
+  font-size: large;
+  margin: 5px;
+}
